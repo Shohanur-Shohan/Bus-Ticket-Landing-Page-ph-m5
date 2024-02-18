@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" data-theme="light">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/Images/favicon.svg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <header class="sm:px-2 py-[12px] md:py-[25px] lg:px-0">
+      <div class="navbar bg-base-100 max-w-[1170px] mx-auto">
+        <!-- mobile -->
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="mr-2 lg:hidden md:mr-4 lg:mr-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class=" dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52">
+              <li class="py-1 pl-2 my-1 rounded-lg hover:bg-slate-100"><a class="text-[#030712] opacity-75 hover:text-[#1dd100] text-[16px] font-medium active" href="/">Home</a></li>
+              <li class="py-1 pl-2 my-1 rounded-lg hover:bg-slate-100"><a class="text-[#030712] opacity-75 hover:text-[#1dd100] text-[16px] font-medium" href="/">About</a></li>
+              <li class="py-1 pl-2 my-1 rounded-lg hover:bg-slate-100"><a class="text-[#030712] opacity-75 hover:text-[#1dd100] text-[16px] font-medium" href="/">Destination</a></li>
+              <li class="py-1 pl-2 my-1 rounded-lg hover:bg-slate-100"><a class="text-[#030712] opacity-75 hover:text-[#1dd100] text-[16px] font-medium" href="/">Search</a></li>
+            </ul>
+          </div>
+          <a href="/" class="md:w-[200px] w-[150px]" >
+            <img src="/Images/webticketsLogo.png" alt="logo">
+          </a>
+        </div>
+        <!-- desktop -->
+        <div class="hidden navbar-center lg:flex">
+          <ul class="px-1 menu-horizontal gap-[44px]">
+            <li><a class="text-[#030712] hover:text-[#1dd100] opacity-75 text-[16px] font-medium active" href="/">Home</a></li>
+            <li><a class="text-[#030712] hover:text-[#1dd100] opacity-75 text-[16px] font-medium" href="/">About</a></li>
+            <li><a class="text-[#030712] hover:text-[#1dd100] opacity-75 text-[16px] font-medium" href="/">Destination</a></li>
+            <li><a class="text-[#030712] hover:text-[#1dd100] opacity-75 text-[16px] font-medium" href="/">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a href="/" class="flex items-center justify-center gap-1 py-[10px] px-[20px] md:py-[14px] md:px-[30px]  text-[#1dd100] hover:text-[#1dd100] font-bold md:text-xl text-lg border-2 border-[#1dd10066] bg-[#1dd1001a] hover:bg-white transition-all delay-100 rounded-lg">
+            <button class="">Bus</button>
+            <img src="/Images/bus-icon.png" alt="bus">
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+       <!-- hero start -->
+        <section class="max-w-[1170px] mx-auto px-2  text-center xl:px-0 h-auto mb-[120px]">
+          <div class="w-full pt-[70px] pb-[130px] rounded-[32px] bg-[url('/Images/banner.png')] bg-center bg-no-repeat bg-cover">
+            <!-- content -->
+            <div class="">
+              <h1 class="text-[30px] sm:text-[40px] md:text-[48px] lg:text-[64px] font-extrabold text-white px-[2%] md:px-[10%]">End-to-End Travel with <span class="text-[#1DD100]">GreenLine Paribahan</span></h1>
+              <p class="px-[2%] sm:px-[5%] md:px-[15%] lg:px-[20%] pb-[32px] pt-[16px] font-inter font-light text-[14px] md:text-[16px] lg:text-[18px] text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+              <a href="/">
+                <button class="py-[10px] px-[20px] md:py-[14px] md:px-[30px]  text-[#030712] hover:text-[#1DD100] font-bold md:text-xl text-lg border-2 border-[#1DD100] bg-[#1DD100] hover:bg-[#FFFFFF] transition-all delay-100 rounded-lg">Buy Tickets</button>
+              </a>
+            </div>
+            <!-- content -->
+          </div>
+          <!-- cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-[970px] lg:mx-auto gap-6 mt-[-65px] mx-[4%]">
+            <!-- card -->
+            <div class="grid items-center justify-center grid-cols-3 col-span-1 sm:col-span-1 lg:col-span-1 hero-card-shadow p-[32px] bg-white">
+              <div class="flex items-center justify-center col-span-1">
+                <img src="/Images/people.png" alt="img">
+              </div>
+              <div class="flex-col col-span-2 gap-1 text-left">
+                <h1 class="text-4xl font-bold font-inter text-[#030712]">500K+</h1>
+                <p class="text-lg font-inter text-[#03071299]">Regristered Users</p>
+              </div>
+            </div>
+
+            <div class="grid items-center justify-center grid-cols-3 col-span-1 sm:col-span-1 lg:col-span-1 hero-card-shadow p-[32px] bg-white">
+              <div class="flex items-center justify-center col-span-1">
+                <img src="/Images/ticket-cupon.png" alt="img">
+              </div>
+              <div class="flex-col col-span-2 gap-1 text-left">
+                <h1 class="text-4xl font-bold font-inter text-[#030712]">600+</h1>
+                <p class="text-lg font-inter text-[#03071299]">Regristered Users</p>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="grid items-center justify-center grid-cols-3 col-span-1 sm:col-span-1 lg:col-span-1 hero-card-shadow p-[32px] bg-white">
+              <div class="flex items-center justify-center col-span-1">
+                <img src="/Images/stoppage.png" alt="img">
+              </div>
+              <div class="flex-col col-span-2 gap-1 text-left">
+                <h1 class="text-4xl font-bold font-inter text-[#030712]">600+</h1>
+                <p class="text-lg font-inter text-[#03071299]">Regristered Users</p>
+              </div>
+            </div>
+            
+          </div>
+          <!-- cards -->        
+        </section>
+       <!-- hero end -->
+    </main>
+</body>
+</html>
