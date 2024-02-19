@@ -385,49 +385,49 @@
   
                   <div class="flex justify-between text-left">
                     <h1 class="text-[#030712] text-[16px] font-inter font-medium ">Total Price</h1>
-                    <h1 class="text-[#030712] text-[16px] font-inter font-medium ">BDT 1500</h1>
+                    <h1 class="text-[#030712] text-[16px] font-inter font-medium ">BDT <span id="totalPrice">00</span></h1>
                   </div>
   
                   <div class="justify-between hidden my-1 text-left">
                     <h1 class="text-[#1DD100] text-[14px] font-inter font-bold">Discount Price</h1>
-                    <h1 class="text-[#1DD100] text-[14px] font-inter font-bold">BDT 400</h1>
+                    <h1 class="text-[#1DD100] text-[14px] font-inter font-bold">BDT <span id="discountPrice">00</span></h1>
                   </div>
   
                   
-                  <div class="relative flex my-[16px] items-center">
+                  <div id="discountGroup" class="relative flex my-[16px] items-center">
                       <input id="couponCode" type="text" id="coupon" class="w-full  px-4 py-3  text-sm text-gray-900 border border-gray-300 rounded-lg  bg-white focus:ring-[#1DD100] focus:border-[#1DD100]" placeholder="Have any copupon?"/>
-                      <button id="couponBtn" type="submit" class="absolute px-4 py-2 text-sm font-medium text-white bg-[#1DD100] rounded-lg right-2 hover:bg-green-300 focus:ring-4 focus:outline-none" disabled>Apply</button>
+                      <button id="couponBtn" type="submit" class="absolute px-4 py-2 text-sm font-medium text-white bg-[#1DD100] rounded-lg right-2 hover:bg-green-300 focus:outline-none">Apply</button>
                   </div>
   
                   <div class="flex justify-between text-left">
                     <h1 class="text-[#030712] text-[16px] font-inter font-medium ">Grand Total</h1>
-                    <h1 class="text-[#030712] text-[16px] font-inter font-medium ">BDT 1100</h1>
+                    <h1 class="text-[#030712] text-[16px] font-inter font-medium ">BDT <span id="GrandTotal">00</span></h1>
                   </div>
                 </div>
   
                                 
   
-                <form class="w-full mt-[36px]">
+                <div class="w-full mt-[36px]">
                   <div class="mb-5">
                     <label class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Passenger Name</label>
-                    <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your name" required />
+                    <input type="text" id="fullname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your name"/>
                   </div>
                   <div class="mb-5">
                     <label class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Phone Number</label>
-                    <input type="number" id="number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your phone number"  required />
+                    <input type="number" id="numberBtn" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your phone number"/>
                   </div>
                   <div class="mb-5">
                     <label class="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Email Id</label>
-                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email id" required />
+                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email id"/>
                   </div>
                   
   
-                  <button type="submit" class="text-white bg-[#1DD100] hover:bg-[#1cd1009d] w-full px-[25px] sm:px-[30px] py-[12px] sm:py-[16px] mx-auto rounded-xl text-[18px] md:text-[20px] font-extrabold">Next</button>
-                </form>
+                  <div id="nextBtn" type="button" class="text-white text-center cursor-pointer bg-[#1DD100] hover:bg-[#1cd1009d] w-full px-[25px] sm:px-[30px] py-[12px] sm:py-[16px] mx-auto rounded-xl text-[18px] md:text-[20px] font-extrabold">Next</>
+                </div>
   
-                <div class="flex justify-between mt-6 text-left">
-                  <a class="text-[#03071299] text-[14px] underline font-inter font-medium ">Terms and Conditions</d>
-                  <a class="text-[#03071299] text-[14px] underline font-inter font-medium ">Cancellation Policy</>
+                <div class="flex flex-row justify-between mt-6">
+                  <a class="text-[#03071299] w-fit inline text-[14px]  underline font-inter font-medium ">Terms and Conditions</p>
+                  <a class="text-[#03071299] w-fit inline text-[14px]  underline font-inter font-medium ">Cancellation Policy</p>
                 </div>
   
   
@@ -435,16 +435,16 @@
             </div>
 
             <!-- pop --> 
-            <div class="absolute hidden w-full h-full top-0 rounded-3xl justify-center items-center bg-[#b1b1b175] px-[2%] md:px-[10%] lg:px-0">
+            <div id="pop" class="absolute hidden w-full h-full top-0 rounded-3xl justify-center items-center bg-[#b1b1b175] px-[2%] md:px-[10%] lg:px-0">
               <div class="text-center bg-white px-0 md:px-[65px] py-[55px] rounded-2xl max-w-[700px] mx-auto">
                   <img class="mx-auto" src="/Images/success.png" alt="img">
-                  <h1 class="text-[#27AE60] text-[18px] sm:text-[24px] font-bold my-[25px] sm:my-[38px]">Success</h1>
-                  <p class="px-[3%] md:px-[10%] text-[14px] md:text-[20px] font-inter font-semibold text-[#4A4A4A]">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
-                  <p class="px-[3%] md:px-[10%] text-[14px] md:text-[20px] font-inter font-medium text-[#4A4A4A] mt-2">Shortly you will find a confirmation in your email.</p>
+                  <h1 class="text-[#27AE60] no-underline text-[18px] sm:text-[24px] font-bold my-[25px] sm:my-[38px]">Success</h1>
+                  <p class="px-[3%] md:px-[10%] no-underline text-[14px] md:text-[20px] font-inter font-semibold text-[#4A4A4A]">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
+                  <p class="px-[3%] md:px-[10%] no-underline text-[14px] md:text-[20px] font-inter font-medium text-[#4A4A4A] mt-2">Shortly you will find a confirmation in your email.</p>
                   
-                  
-                  <button class="py-[10px] px-[30px] md:py-[14px] md:px-[35px] mt-[20px] text-white hover:text-[#1DD100] font-bold md:text-xl text-lg border-2 border-[#27AE60] bg-[#27AE60] hover:bg-[#FFFFFF] transition-all delay-100 rounded-[32px]">Continue</button>
-                  
+                  <!-- <a href="/" class="no-underline"> -->
+                    <button id="Continue" class="py-[10px] no-underline px-[30px] md:py-[14px] md:px-[35px] mt-[20px] text-white hover:text-[#1DD100] font-bold md:text-xl text-lg border-2 border-[#27AE60] bg-[#27AE60] hover:bg-[#FFFFFF] transition-all delay-100 rounded-[32px]">Continue</button>
+                  <!-- </a> -->
               </div>
             </div>
           </div>
