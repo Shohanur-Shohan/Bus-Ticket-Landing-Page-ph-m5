@@ -120,6 +120,11 @@ let availableSeat = Number(seatLeft.innerText);
                                 couponCode.value = "";
                                 discountGroup.classList.add("hidden");
                             }
+                            else{
+                                alert("Invalid Coupon Code");
+                                couponCode.value = "";
+    
+                            }
                         })
 
                         
